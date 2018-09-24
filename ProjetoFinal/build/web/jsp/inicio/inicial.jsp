@@ -1,7 +1,7 @@
 <%-- 
     Document   : inicial
     Created on : 31/08/2018, 11:11:02
-    Author     : Alunos
+    Author     : Joseph A.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -103,8 +103,8 @@
             </ul>
 
             <ul>
-                <li class="cd-label">Action</li>
-                <li class="action-btn"><a href="#0">+ Button</a></li>
+                <li class="cd-label">Utilitários</li>
+                <li class="action-btn"><a href="#0">Adicionar Tarefa</a></li>
             </ul>
         </nav>
 

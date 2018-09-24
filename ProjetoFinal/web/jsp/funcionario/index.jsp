@@ -60,7 +60,7 @@
                     <a href="/home">Home</a>
 
                 </li>
-                <li class="has-children produtos active">
+                <li class="has-children produtos ">
                     <a href="#0">Produtos</a>
 
                     <ul>
@@ -69,7 +69,12 @@
                         <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
                     </ul>
                 </li>
+                    <li class="has-children estoque">
+                    <a href="/estoque">Estoque</a>
 
+
+                </li>
+                
                 <li class="has-children vendas">
                     <a href="#0">Vendas</a>
 

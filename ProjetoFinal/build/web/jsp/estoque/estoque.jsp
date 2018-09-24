@@ -67,7 +67,7 @@
                     <a href="#0">Produtos</a>
 
                     <ul>
-                        <li><a href="/produtos">Todos os produtos</a></li>
+                     
                         <li><a href="/produtos/cadastro">Cadastrar produto</a></li>
                         <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
                     </ul>

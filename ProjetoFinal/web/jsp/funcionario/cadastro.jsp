@@ -60,10 +60,10 @@
 
                 </li>
                 <li class="has-children produtos">
-                    <a href="#0">Produtos</a>
+                    <a href="/produtos">Produtos</a>
 
                     <ul>
-                        <li><a href="/produtos">Todos os produtos</a></li>
+                        
                         <li><a href="/produtos/cadastro">Cadastrar produto</a></li>
                         <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
                     </ul>
@@ -114,74 +114,74 @@
             </ul>
         </nav>
 
-        <div class="content-wrapper">
+        <div class="content-wrapper-estoque">
             <form id="validacao-form-func" action="/funcionarios/store" method="POST">
 
-    <div>
+    <div class="form-group">
         <label for='campo-login'>Novo Login</label>
-        <input type="text" id="campo-login" name='login' placeholder="Login" required="required" onfocusout="validadarCampoLogin">
-
-        <label for="campo-senha">Novo Senha</label>
-        <input type="text" id="campo-senha" name="senha" placeholder="Senha" required="required" onfocusout="validarCampoSenha">
+        <input type="text" class="form-control" id="campo-login" name='login' placeholder="Login" onfocusout="validadarCampoLogin">
     </div>
-
-    <div class = "form-group">
+    <div class="form-group">
+        <label for="campo-senha">Nova Senha</label>
+        <input type="password" class="form-control" id="campo-senha" name="senha" placeholder="Senha" required="required" onfocusout="validarCampoSenha">
+    </div>
+    <div class="form-group">
         <label for='campo-nome'><i class=''></i> Nome Completo</label>
-        <input type='text' id='campo-nome' name='nome' placeholder='Nome'>
+        <input type='text' class="form-control" id='campo-nome' name='nome' placeholder='Nome'>
     </div>
 
     <div class = "form-group">
         <label for='campo-cpf'><i class=''></i> CPF</label>
-        <input type='text' id='campo-cpf' name='cpf' placeholder='CPF'>
+        <input type='text' class="form-control" id='campo-cpf' name='cpf' placeholder="CPF">
     </div>
 
     <div class = "form-group">
         <label for='campo-email'><i class=''></i> E-mail</label>
-        <input type='text' id='campo-email' name='email' placeholder='E-mail'>
+        <input type='email' class="form-control" id='campo-email' name='email' placeholder='E-mail'>
     </div>
 
     <div class = "form-group">
         <label for='campo-telefone'><i class=''></i> Telefone</label>
-        <input type='text' id='campo-telefone' name='telefone' placeholder='Telefone'>
+        <input type='text' class="form-control" id='campo-telefone' name='telefone' placeholder='Telefone'>
     </div>
 
     <div class = "form-group">
         <label for='campo-funcao'><i class=''></i> Função</label>
-        <input type='text' id='campo-funcao' name='funcao' placeholder='Função'>
+        <input type='text' class="form-control" id='campo-funcao' name='funcao' placeholder='Função'>
     </div>
 
-    <div>
+    <div class="form-group">
         <label for='campo-cep'><i class=''></i> CEP</label>
-        <input type='text' id='campo-cep' name='cep' placeholder='CEP'>
+        <input type='text' class="form-control" id='campo-cep' name='cep' placeholder='CEP'>
     </div>
 
-    <div>
+    <div class="form-group">
         <label for='campo-estado'>Estado</label>
-        <input type='text' id='campo-estado' name='estado' placeholder='Estado' onfocusout='processarCep()' >
+        <input type='text' class="form-control" id='campo-estado' name='estado' placeholder='Estado' onfocusout='processarCep()' >
     </div>
 
-    <div>
+    <div class="form-group">
         <label for='campo-logradouro'><i class=''></i> Rua</label>
-        <input type='text' id='campo-logradouro' name='rua' placeholder='Rua'  >
+        <input type='text' class="form-control" id='campo-logradouro' name='rua' placeholder='Rua'  >
     </div>
 
-    <div>
+    <div class="form-group">
         <label for='campo-bairro'><i class=''></i> Bairro</label>
-        <input type='text' id='campo-bairro' name='bairro' placeholder='Bairro'>
+        <input type='text' class="form-control" id='campo-bairro' name='bairro' placeholder='Bairro'>
     </div>
 
-    <div>
+    <div class="form-group">
         <label for='campo-cidade'><i class=''></i> Cidade</label>
-        <input type='text' id='campo-cidade' name='cidade' placeholder='Cidade'>
+        <input type='text' class="form-control" id='campo-cidade' name='cidade' placeholder='Cidade'>
     </div> 
 
-    <div>
+    <div class="form-group">
         <label for='campo-numero'><i class=''></i> Numero</label>
-        <input type='text' id='campo-numero' name='numero' placeholder='Numero'>
+        <input type='text' class="form-control" id='campo-numero' name='numero' placeholder='Numero'>
     </div>
 
     <input class='btn btn-sucess' type='submit' value='Cadastrar'>
-   
+
 </form>
 
             

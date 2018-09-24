@@ -126,6 +126,49 @@ Content-wrapper Funcionário
   }
 }
 
+/* --------------------------------
+
+Content-wrapper Estoque
+
+-------------------------------- */
+.cd-main-content .content-wrapper-estoque{
+  padding: 45px 5% 3em;
+   
+}
+.cd-main-content .content-wrapper-estoque{
+  text-align: center;
+  padding: 3em 0;
+  font-size: 1rem;
+}
+.cd-main-content::before {
+  /* never visible - used to check MQ in jQuery */
+  display: none;
+  content: 'mobile';
+}
+@media only screen and (min-width: 768px) {
+  .cd-main-content .content-wrapper-estoque{
+    margin-left: auto;
+    padding-top: 55px;
+    
+  }
+  .cd-main-content .content-wrapper-estoque{
+    padding: 7em 10em 20em 20em;;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .cd-main-content::before {
+    content: 'tablet';
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-main-content .content-wrapper-funcionario {
+    margin-left: auto;
+  }
+  .cd-main-content::before {
+    content: 'desktop';
+  }
+}
+
 
 
 

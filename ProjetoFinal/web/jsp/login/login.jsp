@@ -22,10 +22,7 @@
     	<input type="text" name="u" placeholder="Usuário" required="required" />
         <input type="password" name="p" placeholder="Senha" required="required" />
         <div class="forgot" id = "register">
-        <a href="reset.html">Esqueceu a senha?</a>
         
-        <a href="reset.html" id = "register">Não possui um cadastro?</a>
-        </div> 
         <button type="submit" class="btn btn-primary btn-block btn-large">Entrar</button>
         
         

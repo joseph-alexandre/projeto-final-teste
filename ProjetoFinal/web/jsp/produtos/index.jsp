@@ -9,6 +9,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../master/master.jsp"%>
 
+<%-- 
+    Document   : inicial
+    Created on : 31/08/2018, 11:11:02
+    Author     : Alunos
+--%>
+
 
 <div id="target" style="overflow: auto; width: auto; height: auto;">
     <header class="cd-main-header">
@@ -48,16 +54,84 @@
                 </li>
             </ul>
         </nav>
-    </header>  
-    		<div id="tabela">
+    </header> <!-- .cd-main-header -->
+
+    <main class="cd-main-content">
+        <nav class="cd-side-nav">
+            <ul>
+                <li class="cd-label">Principal</li>
+                <li class="has-children home">
+                    <a href="/home">Home</a>
+
+                </li>
+                <li class="has-children produtos">
+                    <a href="#0">Produtos</a>
+
+                    <ul>
+                       
+                        <li><a href="/produtos/cadastro">Cadastrar produto</a></li>
+                        <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children estoque">
+                    <a href="/estoque">Estoque</a>
+
+
+                </li>
+                <li class="has-children vendas">
+                    <a href="#0">Vendas</a>
+
+
+                </li>
+            </ul>
+
+            <ul>
+                <li class="cd-label">Secundário</li>
+                <li class="has-children funcionarios">
+                    <a href="#0">Funcionários</a>
+
+                    <ul>
+                        <li><a href="/funcionarios">Todos os funcionários</a></li>
+                        <li><a href="/funcionario/cadastro">Cadastrar funcionário</a></li>
+
+                    </ul>
+                </li>
+                <li class="has-children fornecedores">
+                    <a href="#0">Fornecedores</a>
+
+                    <ul>
+                        <li><a href="/fornecedor">Todos os fornecedores</a></li>
+                        <li><a href="/fornecedor/cadastro">Cadastrar fornecedor</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children estatistica">
+                    <a href="/visaogeral">Estatísticas</a>
+
+                    
+                </li>
+            </ul>
+
+            <ul>
+                <li class="cd-label">Utilitários</li>
+                <li class="action-btn"><a href="#0">Adicionar Tarefa</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+      
+
+
+<div id="tabela">
     <table class="table table-hover table-bordered" id="produtos-index">
-        <thead class="thead-light">
+        <thead class="thead-dark">
             <tr>
                 <%--<th>#</th>--%>
-                <th>Categoria</th>
-                <th>Nome</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
+                 <th style="width: 16.66%">Categoria</th>
+                <th style="width: 16.66%">Nome</th>
+                <th style="width: 16.66%">Preço</th>
+                <th style="width: 16.66%">Quantidade</th>
                     <%--<th>Quantidade</th>--%>
                 <th> <i class="fas fa-cogs"></i></th>
             </tr>
@@ -67,11 +141,16 @@
     </table>
 </div>
         
-<div class="form form-group">
-    <input class="btn btn-outline-success float-right" type="button" id="exportar" value="Exportar Tabela">
-</div>
-		<a class="btn btn-success float-right" href="/estoque/adicionar">Adicionar</a>
-<div>
-    
 
-<%@include file="../master/rodape.jsp"%>
+            
+            </div>
+        </div> <!-- .content-wrapper -->
+    </main>
+</div>
+
+
+<%@include file="../master/rodape.jsp" %>
+
+
+
+

@@ -53,28 +53,108 @@
                 </li>
             </ul>
         </nav>
-    </header> 
+    </header> <!-- .cd-main-header -->
 
-    <div class="content-wrapper-estoque">
-       <table class="table table-hover dataTable" id="estoque-index">
-    <thead class="thead-light">
-            <thead class="thead-light">
-            <tr>
-            <th scope="col">Tipo</th>       
-             <th scope="col">Produto</th>    
-             <th scope="col">ValorUn.</th>    
-             <th scope="col">Quantidade</th>
-             <th scope="col">Valor Total</th>
-             <th scope="col">Acao</th>
-             <th scope="col"><i class="fas fa-cogs"></i></th>
-            </thead>
+    <main class="cd-main-content">
+        <nav class="cd-side-nav">
+            <ul>
+                <li class="cd-label">Principal</li>
+                <li class="has-children home">
+                    <a href="/home">Home</a>
 
-</table>
+                </li>
+                <li class="has-children produtos">
+                    <a href="#0">Produtos</a>
 
+                    <ul>
+                     
+                        <li><a href="/produtos/cadastro">Cadastrar produto</a></li>
+                        <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children estoque">
+                    <a href="/estoque">Estoque</a>
+
+
+                </li>
+                <li class="has-children vendas">
+                    <a href="#0">Vendas</a>
+
+
+                </li>
+            </ul>
+
+            <ul>
+                <li class="cd-label">Secundário</li>
+                <li class="has-children funcionarios">
+                    <a href="/funcionarios">Funcionários</a>
+
+                    <ul>
+                        
+                        <li><a href="/funcionario/cadastro">Cadastrar funcionário</a></li>
+
+                    </ul>
+                </li>
+                <li class="has-children fornecedores">
+                    <a href="/fornecedor">Fornecedores</a>
+
+                    <ul>
+                        
+                        <li><a href="/fornecedor/cadastro">Cadastrar fornecedor</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-children estatistica">
+                    <a href="/visaogeral">Estatísticas</a>
+
+                    
+                </li>
+            </ul>
+
+            <ul>
+                <li class="cd-label">Utilitários</li>
+                <li class="action-btn"><a href="#0">Adicionar Tarefa</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper-estoque">
+           
+
+<div>
+    <table class="table table-hover table-bordered">
+        <thead class = "thead-dark">
+            <th>Tipo</th>    
+            <th>Produto</th>    
+            <th>ValorUn.</th>    
+            <th>Quantidade</th>
+            <th>Valor Total</th>
+            <th>Acao</th>
+        </thead>
+        <tbody>
+            
+            <% for(EstoqueBean estoque : estoques) {%>
+        <tr>
+        <td> <%=estoque.getTipo()%> </td>
+        <td> <%=estoque.getProduto().getNome()%> </td>
+        <td> <%=estoque.getProduto().getPreco() %> </td>
+        <td> <%=estoque.getQuantidade()%> </td>
+        <td> <%=estoque.valorTotal()%> </td>
+        <td> <% // açao %> </td>
+        </tr>
+            <%}%>
+        </tbody>
+    </table>
+</div>
+
+<%@include file="../master/rodape.jsp" %>
+
+           
+            </div>
         </div> <!-- .content-wrapper -->
     </main>
 </div>
 
-<%@include file="../master/master.jsp" %>
-<%@include file="../master/rodape.jsp" %> 
+
 <%@include file="../master/rodape.jsp" %>
+

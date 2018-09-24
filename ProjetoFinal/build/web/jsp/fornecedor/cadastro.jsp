@@ -78,19 +78,19 @@
             <ul>
                 <li class="cd-label">Secundário</li>
                 <li class="has-children funcionarios">
-                    <a href="#0">Funcionários</a>
+                    <a href="/funcionarios">Funcionários</a>
 
                     <ul>
-                        <li><a href="/funcionarios">Todos os funcionários</a></li>
+                        
                         <li><a href="/funcionario/cadastro">Cadastrar funcionário</a></li>
 
                     </ul>
                 </li>
                 <li class="has-children fornecedores">
-                    <a href="#0">Fornecedores</a>
+                    <a href="/fornecedor">Fornecedores</a>
 
                     <ul>
-                        <li><a href="/fornecedor">Todos os fornecedores</a></li>
+                        
                         <li><a href="/fornecedor/cadastro">Cadastrar fornecedor</a></li>
                     </ul>
                 </li>

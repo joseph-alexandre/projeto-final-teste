@@ -60,21 +60,21 @@
                     <a href="/home">Home</a>
 
                 </li>
-                <li class="has-children produtos">
-                    <a href="/produtos">Produtos</a>
+                <li class="has-children produtos ">
+                    <a href="#0">Produtos</a>
 
                     <ul>
-                        
+                        <li><a href="/produtos">Todos os produtos</a></li>
                         <li><a href="/produtos/cadastro">Cadastrar produto</a></li>
                         <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
                     </ul>
                 </li>
-
-                <li class="has-children estoque">
+<li class="has-children estoque">
                     <a href="/estoque">Estoque</a>
 
 
                 </li>
+                
                 <li class="has-children vendas">
                     <a href="#0">Vendas</a>
 
@@ -85,19 +85,19 @@
             <ul>
                 <li class="cd-label">Secundário</li>
                 <li class="has-children funcionarios">
-                    <a href="/funcionarios">Funcionários</a>
+                    <a href="#0">Funcionários</a>
 
                     <ul>
-                        
+                        <li><a href="/funcionarios">Todos os funcionários</a></li>
                         <li><a href="/funcionario/cadastro">Cadastrar funcionário</a></li>
 
                     </ul>
                 </li>
                 <li class="has-children fornecedores">
-                    <a href="/fornecedor">Fornecedores</a>
+                    <a href="#0">Fornecedores</a>
 
                     <ul>
-                        
+                        <li><a href="/fornecedor">Todos os fornecedores</a></li>
                         <li><a href="/fornecedor/cadastro">Cadastrar fornecedor</a></li>
                     </ul>
                 </li>
@@ -110,14 +110,14 @@
             </ul>
 
             <ul>
-                <li class="cd-label">Utilitários</li>
-                <li class="action-btn"><a href="#0">Adicionar Tarefa</a></li>
+                <li class="cd-label">Action</li>
+                <li class="action-btn"><a href="#0">+ Button</a></li>
             </ul>
         </nav>
 
-         <div class="content-wrapper-estoque">
+         <div class="content-wrapper-funcionario">
        <table class="table table-hover dataTable" id="funcionario-index">
-    <thead class="thead-dark">
+    <thead class="thead-light">
         <tr>
             <th scope="col">Id</th>
             <th scope="col">Funcionario</th>

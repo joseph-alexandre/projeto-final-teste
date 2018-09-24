@@ -121,27 +121,31 @@ public class CategoriaDAO {
 
     }
 
-    public HashMap<String, Object> obterVisao() {
-        List<Object> categoriaNomes = new ArrayList<>();
-        List<Object> categoriaQuantidades = new ArrayList<>();
-        String sql = "SELECT ct.nome as 'categoria', COUNT(pr.id_categoria) as 'quantidade' FROM produtos pr\n"
-                + "\nJOIN categorias ct ON(ct.id = pr.id_categoria)\n"
-                + "\nGROUP BY pr.id_categoria";
+    public List<HashMap<String, Object>> obterTodosParaGrafico(){
+       List<HashMap<String, Object>> categorias = new ArrayList<>();
+        String sql = "SELECT * FROM categorias";
         try {
-            Statement st = Conexao.obterConexao().createStatement();
-            st.execute(sql);
-            ResultSet resultSet = st.getResultSet();
+            Statement statement = Conexao.obterConexao().createStatement();
+            statement.execute(sql);
+            ResultSet resultSet = statement.getResultSet();
             while (resultSet.next()) {
-                categoriaNomes.add(resultSet.getString("categoria"));
-                categoriaQuantidades.add(resultSet.getInt("quantidade"));
+                HashMap<String, Object> categoria = new HashMap<>();
+                categoria.put("nome", resultSet.getString("nome"));
+                categoria.put("id", resultSet.getInt("id"));
+                categorias.add(categoria);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        HashMap<String, Object> categorias = new HashMap<>();
-        categorias.put("categorias", categoriaNomes);
-        categorias.put("quantidades", categoriaQuantidades);
-        return categorias;
-    }
 
+        } catch (SQLException ex) {
+            Logger.getLogger(CategoriaDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            Conexao.fecharConexao();
+        }
+        return categorias;
+
+    
+    }
+    
+    
+    
 }
+

@@ -69,7 +69,7 @@
                         <li><a href="/categoria/cadastro">Cadastrar categoria</a></li>
                     </ul>
                 </li>
-                    <li class="has-children estoque">
+<li class="has-children estoque">
                     <a href="/estoque">Estoque</a>
 
 
